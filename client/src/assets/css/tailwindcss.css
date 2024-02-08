@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-white;
+    background: linear-gradient(
+      150deg,
+      rgb(4, 7, 20) 30%,
+      rgb(11, 22, 69) 100%
+    );
+  }
+}
