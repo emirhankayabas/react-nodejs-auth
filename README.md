@@ -17,6 +17,6 @@ VITE_APP_API_URL
 ```
 
 # Images
-<img src="https://github.com/emirhankayabas/react-nodejs-auth/assets/92752721/8d40ef23-e328-4a36-8cd0-e30f700e6fde" width="800px">
-<img src="https://github.com/emirhankayabas/react-nodejs-auth/assets/92752721/04f22baa-6f35-4479-a46d-43d692dfed01" width="800px">
-<img src="https://github.com/emirhankayabas/react-nodejs-auth/assets/92752721/b1c6d8cf-8109-46a8-bc9b-bfc13d3f074d" width="800px">
+<img src="https://github.com/emirhankayabas/react-nodejs-auth/assets/92752721/8f0174dd-03d5-4739-bb16-c5ef1a43802e" width="800px">
+<img src="https://github.com/emirhankayabas/react-nodejs-auth/assets/92752721/00b0a3fe-1f0c-4736-8fcd-54351b9c78f8" width="800px">
+<img src="https://github.com/emirhankayabas/react-nodejs-auth/assets/92752721/7fd92f51-9fb6-476b-a731-6422023c08cc" width="800px">
