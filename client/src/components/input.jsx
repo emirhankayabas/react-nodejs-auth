@@ -8,7 +8,7 @@ export default function Input({ type = "text", name, placeholder, ...props }) {
         name={name}
         placeholder={placeholder}
         {...props}
-        className="w-full h-14 bg-transparent font-medium border-2 border-gray-700 px-4 rounded-md outline-none hover:border-red-600 focus:border-red-600 transition-colors duration-[275ms]"
+        className="w-full text-lg h-16 bg-transparent font-medium border-2 border-zinc-700 px-4 rounded-md outline-none hover:border-red-600 focus:border-red-600 transition-colors duration-[275ms]"
       />
     </>
   );

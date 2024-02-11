@@ -1,49 +1,19 @@
-import { useState } from "react";
-
-import Header from "./components/header";
-import Form from "./components/form";
-import Alert from "~/components/alert";
+import { Link } from "react-router-dom";
+import Title from "~/components/title";
 
 export default function Home() {
-  const [message, setMessage] = useState("");
-
-  const createUser = async (data) => {
-    try {
-      const response = await fetch(
-        `${import.meta.env.VITE_APP_API_URL}/users/create`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        }
-      );
-
-      const result = await response.json();
-      const { message } = result;
-      setMessage(message);
-    } catch (error) {
-      console.error("Error:", error);
-    }
-  };
-
-  const handleSubmitForm = (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    const data = Object.fromEntries(formData);
-    createUser(data);
-  };
-
   return (
-    <div className="container mx-auto min-h-screen">
-      <div className="max-w-sm">
-        <Header />
+    <>
+      <div className="container mx-auto min-h-screen">
+        <div className="max-w-sm">
+          <Link to="/">
+            <Title>Home</Title>
+          </Link>
 
-        {message && <Alert className="mt-12">{message}</Alert>}
-
-        <Form handleSubmitForm={handleSubmitForm} />
+          <Link to="/auth/sign-up">Kayıt ol</Link>
+          <Link to="/auth/sign-in">Giriş yap</Link>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
